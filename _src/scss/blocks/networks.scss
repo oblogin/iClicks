@@ -1,0 +1,78 @@
+.networks {
+  margin-bottom: 70px;
+
+  @include min-width(lg) {
+    margin-bottom: 95px;
+
+    .container {
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("../images/bg-elipse-blur.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 825px;
+        height: 825px;
+        display: block;
+        position: absolute;
+        top: -125px;
+        left: -475px;
+        z-index: -5;
+      }
+    }
+  }
+
+  &__filter {
+    @include max-width(xs) {
+      .networks-button-prev {
+        left: -27.5px;
+        z-index: 50;
+      }
+      .networks-button-next {
+        right: -27.5px;
+        z-index: 50;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    @include min-width(lg) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    padding: 40px 80px;
+    background: #1A1A28;
+    box-shadow: 0 4px 4px rgba(15, 15, 22, 0.25), 0 15px 36px #0F0F16;
+    border-radius: 16px;
+
+    @include max-width(xs) {
+      max-height: 70vh;
+      overflow: scroll;
+    }
+
+    @include min-width(lg) {
+      width: 735px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    display: none;
+    line-height: 32px;
+
+    @include min-width(lg) {
+      width: 160px;
+      line-height: 38px;
+    }
+  }
+}

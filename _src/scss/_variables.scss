@@ -1,0 +1,13 @@
+$roboto: "Roboto", "Arial", sans-serif;
+$bebas: "Bebas Neue", "Arial", sans-serif;
+
+$color: #121212;
+$background-color: white;
+
+$grid-breakpoints: (
+  xs: 0,
+  lg: 1200px
+) !default;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

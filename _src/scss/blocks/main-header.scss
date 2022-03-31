@@ -1,0 +1,30 @@
+.main-header {
+  padding-top: 45px;
+
+  @include min-width(lg) {
+    padding-top: 55px;
+  }
+
+  .container {
+
+    @include min-width(lg) {
+     position: relative;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../images/bg-elipse-blur.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 675px;
+      height:  675px;
+      display: block;
+      position: absolute;
+      top: -125px;
+      left: -375px;
+      z-index: -5;
+    }
+  }
+
+}

@@ -1,0 +1,11 @@
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 304px;
+
+  @include min-width(lg) {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1200px;
+  }
+}

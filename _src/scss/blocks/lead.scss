@@ -1,0 +1,64 @@
+.lead {
+  margin-bottom: 70px;
+
+  @include min-width(lg) {
+    margin-bottom: 120px;
+  }
+
+  &__content {
+    background: linear-gradient(90.47deg, #1365E0 0.82%, #1AE1EE 80.62%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 25px;
+
+    @include min-width(lg) {
+      position: relative;
+      padding: 20px 15px 20px;
+    }
+  }
+
+  &__header {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #1A1A28;
+
+    @include min-width(lg) {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    margin: 10px auto 0;
+    min-width: 200px;
+    height: 45px;
+    padding: 16px;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #F8F8FA;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(360deg, #1365E0 0%, #1AE1EE 100%);
+    box-shadow: 0 8px 32px #1365E0;
+    border-radius: 30px;
+
+    @include min-width(lg) {
+      position: absolute;
+      right: 18px;
+      top: 11px;
+      margin: 0;
+    }
+  }
+}

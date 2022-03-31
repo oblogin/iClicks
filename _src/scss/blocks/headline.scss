@@ -1,0 +1,24 @@
+.headline {
+  margin: 0;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px 30px 18px 30px;
+  font-weight: 500;
+  background: linear-gradient(121.96deg, rgba(255, 255, 255, 0.4) 13.88%, rgba(255, 255, 255, 0.04) 98.11%);
+  backdrop-filter: blur(32px);
+  border-radius: 250px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #F8F8FA;
+
+  @include min-width(lg) {
+    display: inline-block;
+    min-width: 250px;
+    text-align: left;
+    margin: 0 0 10px;
+    padding-right: 55px;
+
+  }
+}

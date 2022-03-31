@@ -1,0 +1,51 @@
+.intro {
+  margin-bottom: 70px;
+
+  @include min-width(lg) {
+    @include container;
+    position: relative;
+    margin-bottom: 125px;
+  }
+
+  &__caption {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    @include min-width(lg) {
+      font-size: 64px;
+      line-height: 75px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__content {
+    @include max-width(xs) {
+      @include container;
+    }
+
+    @include min-width(lg) {
+      max-width: 460px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include min-width(lg) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    @include max-width(xs) {
+      margin-bottom: 90px;
+      text-align: center;
+    }
+  }
+}

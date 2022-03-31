@@ -1,0 +1,125 @@
+.navbar {
+  margin-bottom: 65px;
+
+  @include min-width(lg) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 105px;
+  }
+
+  &__brand {
+
+    &--active {
+      position: absolute;
+      top: 45px;
+      z-index: 250;
+    }
+  }
+
+  &__wrap {
+    display: none;
+
+    &--active {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #14141c;
+      z-index: 100;
+    }
+
+    @include min-width(lg) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 250;
+
+    & > svg:nth-of-type(2) {
+      display: none;
+    }
+
+    &--active {
+      & > svg:nth-of-type(2) {
+        display: block;
+      }
+      & > svg:nth-of-type(1) {
+        display: none;
+      }
+    }
+
+    @include min-width(lg) {
+      display: none !important;
+    }
+  }
+
+  &__nav {
+    @include list-reset;
+
+    @include max-width(xs) {
+      margin-top: 200px;
+      margin-bottom: 120px;
+    }
+
+    @include min-width(lg) {
+      display: flex;
+      margin-right: 40px;
+    }
+  }
+
+  &__item {
+    @include max-width(xs) {
+      margin-bottom: 48px;
+    }
+
+    @include min-width(lg) {
+      &:not(:last-of-type) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: inherit;
+    text-align: center;
+
+    @include min-width(lg) {
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: inherit;
+  }
+}
