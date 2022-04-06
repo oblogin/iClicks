@@ -8,6 +8,45 @@
     margin-bottom: 105px;
   }
 
+  &__contacts {
+    display: block;
+
+    @include min-width(lg) {
+      margin-right: 25px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include min-width(lg) {
+      display: flex;
+      min-width: 115px;
+    }
+  }
+
+  &__email,
+  &__phone {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #f8f8fa;
+
+    @include min-width(lg) {
+      text-align: right;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 8px;
+  }
+
   &__brand {
 
     &--active {
@@ -71,7 +110,7 @@
 
     @include max-width(xs) {
       margin-top: 200px;
-      margin-bottom: 120px;
+      margin-bottom: 80px;
     }
 
     @include min-width(lg) {
@@ -101,15 +140,23 @@
     color: inherit;
     text-align: center;
 
+    &:hover {
+      color: #1AE1EE;
+    }
+
+    &:focus {
+      color: #1AE1EE;
+    }
+
+    &:active {
+      color: #1AE1EE;
+    }
+
     @include min-width(lg) {
       display: block;
       font-weight: 600;
       font-size: 12px;
       line-height: 14px;
-    }
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 

@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .button {
+    width: 100%;
+  }
+
+  &__control {
+    min-height: 45px;
+    border-radius: 22.5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding:  14px 45px 15px;
+    outline: none;
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(15, 15, 22, 0.25);
+    }
+
+    &:hover {
+      border: 2px solid #1AE1EE;
+    }
+
+    &:focus {
+      border: 2px solid #1365E0;
+    }
+
+    &:active {
+      border: 2px solid #1365E0;
+    }
+
+  }
+
+  &__text {
+    position: absolute;
+    padding-left: 25px;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #FF0000;
+    display: none;
+  }
+
+  &__field {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+}

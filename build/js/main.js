@@ -16,6 +16,24 @@ const navbarTogglee = document.getElementById("navbar-toggle");
 const mainBody = document.getElementById('main-body');
 const navbarWrap = document.getElementById('navbar-wrap');
 const navbarBrand = document.getElementById('navbar-brand');
+const uppupClose = document.getElementById('uppup-close');
+const uppup = document.getElementById('uppup');
+
+function toggleUppup() {
+  uppup.classList.toggle("uppup--active");
+}
+
+uppupClose.addEventListener('click', function () {
+  toggleUppup();
+});
+
+let linksUppups = document.querySelectorAll('a[href^="#start-work"]');
+for (let i = 0; i < linksUppups.length; i++) {
+  linksUppups[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    toggleUppup();
+  })
+}
 
 if (!isDesctop()) {
   navbarTogglee.addEventListener('click', function (evt) {

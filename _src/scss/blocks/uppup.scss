@@ -1,0 +1,114 @@
+.uppup {
+  display: none;
+  position: fixed;
+  padding-top: 180px;
+  padding-left: 60px;
+  padding-right: 60px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1A1A28;
+  z-index: 5000;
+
+  @include min-width(lg) {
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(15, 15, 22, 0.25), 0 15px 36px #0F0F16;
+    width: 1200px;
+    max-height: 640px;
+    padding: 150px 40px 40px 40px;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--active {
+    display: block;
+
+    @include min-width(lg) {
+      display: flex;
+    }
+  }
+
+  &__form {
+    @include min-width(lg) {
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-right: 32px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 55px;
+    right: 45px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 250;
+  }
+
+  &__brand {
+    position: absolute;
+    top: 40px;
+    z-index: 250;
+    width: 188px;
+
+    @include max-width(xs) {
+      left: 35px;
+    }
+
+    @include min-width(lg) {
+      width: 260px;
+    }
+
+  }
+
+  &__list {
+    display: none;
+    flex-grow: 1;
+    flex-shrink: 0;
+    @include list-reset;
+
+    @include min-width(lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 215px 30px 30px;
+    width: 255px;
+    background: #1A1A28;
+    box-shadow: 0 4px 4px rgba(15, 15, 22, 0.25), 0 15px 36px #0F0F16;
+    border-radius: 12px;
+
+  }
+
+  &__icon {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1365E0;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F8F8FA;
+  }
+}

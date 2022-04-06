@@ -26,7 +26,11 @@
             <li class="navbar__item"><a class="navbar__link" href="#target">Таргеты</a></li>
           </ul>
 
-          <a class="navbar__phone" href="tel:+74992838026">+7 (499) 283-80-26</a>
+          <div class="navbar__contacts">
+            <a class="navbar__phone" href="tel:+74992838026">+7 (499) 283-80-26</a>
+            <a class="navbar__email" href="mailto:rp@iclicks.io">rp@iclicks.io</a>
+          </div>
+          <a class="navbar__button button" href="#">Войти</a>
       </div>
 
       <button id="navbar-toggle" class="navbar__toggle" type="button">
@@ -49,7 +53,7 @@
         </p>
 
         <p class="intro__button">
-          <a class="button" href="#">Заказать демо</a>
+          <a class="button" href="#start-work">Заказать демо</a>
         </p>
       </div>
 
@@ -120,7 +124,7 @@
     <div class="container">
       <div class="lead__content">
         <h2 class="lead__header">Эффективная рекламная кампания для вас</h2>
-        <a class="lead__button" href="#">Заказать демо</a>
+        <a class="lead__button" href="#start-work">Заказать демо</a>
       </div>
     </div>
   </section>
@@ -839,20 +843,82 @@
     <div class="container">
       <div class="lead__content">
         <h2 class="lead__header">Платформа объединяющая все рекламные сети</h2>
-        <a class="lead__button" href="#">Заказать демо</a>
+        <a class="lead__button" href="#start-work">Заказать демо</a>
       </div>
     </div>
   </section>
 
 </main>
+
 <footer class="main-footer">
   <div class="container">
     <img class="main-footer__logo" src="images/logo.svg" alt="">
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<section id="uppup" class="uppup">
+  <form class="uppup__form form" action="#" method="post">
+    <div class="form__field">
+      <label class="visually-hidden" for="examplePerson">Имя / Фамилия</label>
+      <input class="form__control" id="examplePerson" aria-describedby="personHelp" placeholder="Имя / Фамилия">
+      <div class="form__text" id="personHelp">Заполните имя и фамилию</div>
+    </div>
+    <div class="form__field">
+      <label class="visually-hidden" for="phone">Номер телефона</label>
+      <input class="form__control" id="phone" aria-describedby="phoneHelp" placeholder="Номер телефона">
+      <div class="form__text" id="phoneHelp">Заполните номер телефона</div>
+    </div>
+    <div class="form__field">
+      <label class="visually-hidden" for="email">Ваш e@mail</label>
+      <input class="form__control" id="email" aria-describedby="emailHelp" placeholder="Ваш e@mail">
+      <div class="form__text" id="emailHelp">Заполните номер телефона</div>
+    </div>
+    <div class="form__field">
+      <label class="visually-hidden" for="organization">Название организации</label>
+      <input class="form__control" id="organization" aria-describedby="organizationHelp" placeholder="Название организации">
+      <div class="form__text" id="organizationHelp">Заполните название организации</div>
+    </div>
 
+    <button type="submit" class="button">Начать работу</button>
+  </form>
+  <ul class="uppup__list">
+    <li class="uppup__item">
+      <svg class="uppup__icon" width="178" height="115">
+        <use xlink:href="#ic-uppup-1"></use>
+      </svg>
+      <h3 class="uppup__caption">Индивидуальная разработка</h3>
+      <p class="uppup__text">
+        Отслеживаем все новые технологии и применяем в своей платформе
+      </p>
+    </li>
+    <li class="uppup__item">
+      <svg class="uppup__icon" width="198" height="162">
+        <use xlink:href="#ic-uppup-2"></use>
+      </svg>
+      <h3 class="uppup__caption">Полная линейка форматов рекламы</h3>
+      <p class="uppup__text">
+        Используем лучшие форматы для достижения поставленных целей
+      </p>
+    </li>
+    <li class="uppup__item">
+      <svg class="uppup__icon" width="178" height="115">
+        <use xlink:href="#ic-uppup-3"></use>
+      </svg>
+      <h3 class="uppup__caption">Используем технологии будущего</h3>
+      <p class="uppup__text">
+        Маркетиговые коммуникации на основе самых передовых технологий искусственного интеллекта
+      </p>
+    </li>
+  </ul>
+
+  <img class="uppup__brand" src="images/logo.svg" width="258" height="96" alt="adReturn Dynamic Retargeting">
+
+  <button id="uppup-close" class="uppup__close" type="button">
+    <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="22.627" width="32" height="4" rx="2" transform="rotate(-45 0 22.627)" fill="#F8F8FA"/><rect x="22.627" y="25.456" width="32" height="4" rx="2" transform="rotate(-135 22.627 25.456)" fill="#F8F8FA"/></svg>
+  </button>
+</section>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
